@@ -1,7 +1,24 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+const axios = require('axios');
 
-// You can delete this file if you're not using it
+exports.sourceNodes = async ({ actions }) => {
+  const { createNode } = actions
+
+  const res = await axios.get('https://panjs.com/ywc.json')
+  const data = res.data
+  const ywcNode = {
+    id: 'ywc',
+    parent: `__SOURCE__`,
+    internal: {
+      type: 'YWCData',
+      contentDigest: 'ywc'
+    },
+    children: [],
+
+    navbarItems: data.navbarItems,
+    duration: data.duration,
+    detail: data.detail,
+    condition: data.condition
+  }
+  createNode(ywcNode)
+  return
+}
