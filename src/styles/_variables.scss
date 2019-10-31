@@ -1,0 +1,43 @@
+//Default color
+$white: #FFFFFF;
+$gray: #FAFAFA;
+$text-black: #333333;
+
+//CI of shim-shop-chai
+$ci-yellow: #FBBC33;
+$ci-blue: #213A8F;
+$ci-red: #E6332A;
+
+// START: Min Width
+// @media (min-width: $screen-xs-min) {}
+// @media (min-width: $screen-sm-min) {}
+// @media (min-width: $screen-md-min) {}
+// @media (min-width: $screen-lg-min) {}
+// @media (min-width: $screen-xl-min) {}
+
+// START: Max Width
+// @media (max-width: $screen-vs-max) {}
+// @media (max-width: $screen-xs-max) {}
+// @media (max-width: $screen-sm-max) {}
+// @media (max-width: $screen-md-max) {}
+// @media (max-width: $screen-lg-max) {}
+
+//== Media queries breakpoints
+//
+
+$screen-sm: 576px !default;
+$screen-sm-min: $screen-sm !default;
+
+$screen-md: 768px !default;
+$screen-md-min: $screen-md !default;
+
+$screen-lg: 992px !default;
+$screen-lg-min: $screen-lg !default;
+
+$screen-xl: 1200px !default;
+$screen-xl-min: $screen-xl !default;
+
+$screen-xs-max: ($screen-sm-min - 1) !default;
+$screen-sm-max: ($screen-md-min - 1) !default;
+$screen-md-max: ($screen-lg-min - 1) !default;
+$screen-lg-max: ($screen-xl-min - 1) !default;

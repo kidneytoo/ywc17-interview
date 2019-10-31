@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: 'TATSanaSuksa';
+  color: $text-black;
+  background-color: $white;
+}
+a {
+  text-decoration: none;
+}
+span.nowrap {
+  white-space: nowrap;
+}

@@ -1,0 +1,80 @@
+.home-page {
+  padding-top: 60px;
+  .banner {
+    height: 350px;
+     @media (max-width: $screen-xs-max) {
+       height: 225px;
+     }
+    .cover {
+      background-size: cover;
+      background-position: center;
+      &.cover-eating {
+        background-image: url("../images/home/eating.jpg");
+      }
+      &.cover-shopping {
+        background-image: url("../images/home/shopping.jpg");
+
+        img {
+          max-height: 292px;
+          max-width: 250px;
+        }
+      }
+      &.cover-traveling {
+        background-image: url("../images/home/traveling.jpg");
+      }
+    }
+  }
+  .duration-container {
+    font-family: 'TATSanaChon-Bold';
+    .duration {
+      color: $ci-red;
+      font-size: 48px;
+      line-height: 1.2;
+      @media (max-width: $screen-xs-max) {
+        font-size: 32px;
+      }
+    }
+    .register-box {
+      background-color: $ci-blue;
+      text-align: center;
+      color: $white;
+      box-shadow: 0 16px 32px rgba($ci-blue, 0.4);
+    }
+  }
+  .detail-container {
+    h4 {
+      color: $ci-red;
+      font-family: 'TATSanaChon-Bold';
+      font-size: 32px;
+      line-height: 1.8;
+      @media (max-width: $screen-sm-max) {
+        font-size: 24px;
+      }
+    }
+  }
+  .condition-container {
+    .title {
+      font-family: 'TATSanaChon-Bold';
+    }
+  }
+  .banner-container {
+    img {
+    }
+  }
+  .brand-logo-container {
+    a {
+      &:hover {
+        img {
+          transform: scale(1.2);
+        }
+      }
+      img {
+        transition: transform 0.3s ease;
+        max-width: 100px;
+        @media (max-width: $screen-xs-max) {
+          max-width: 80px;
+        }
+      }
+    }
+  }
+}

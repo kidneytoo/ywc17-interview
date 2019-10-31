@@ -1,0 +1,49 @@
+footer {
+  font-size: 14px;
+  .footer-info {
+    background-color: $gray;
+
+    img {
+      width: 108px;
+    }
+
+    .title {
+      font-size: 16px;
+      color: $ci-red;
+      font-weight: bold;
+    }
+
+    .info {
+      a {
+        color: $text-black;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: $ci-red;
+        }
+      }
+    }
+  }
+  .footer-link {
+    background-color: $ci-blue;
+    font-family: 'TATSanaChon-Bold';
+    color: $white;
+
+    .container {
+      li {
+        @media (max-width: $screen-sm-max) {
+          text-align: left;
+        }
+
+        a {
+          color: $white;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: $ci-yellow;
+          }
+        }
+      }
+    }
+  }
+}
