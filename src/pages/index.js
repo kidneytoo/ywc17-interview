@@ -80,32 +80,32 @@ export default function IndexPage({data}) {
           </div>
           <div className="brand-logo-container row mx-0 py-3">
             <div className="col-4 col-md-2 d-flex justify-content-center">
-              <a href="https://www.mof.go.th/th/home" target="_blank">
+              <a href="https://www.mof.go.th/th/home" target="_blank" rel="noopener noreferrer">
                 <img className="w-100" src={LogoMOF} alt="LogoMOF" />
               </a>
             </div>
             <div className="col-4 col-md-2 d-flex justify-content-center">
-              <a href="http://www.fpo.go.th" target="_blank">
+              <a href="http://www.fpo.go.th" target="_blank" rel="noopener noreferrer">
                 <img className="w-100" src={LogoFPO} alt="LogoFPO" />
               </a>
             </div>
             <div className="col-4 col-md-2 d-flex justify-content-center">
-              <a href="https://www.cgd.go.th" target="_blank">
+              <a href="https://www.cgd.go.th" target="_blank" rel="noopener noreferrer">
                 <img className="w-100" src={LogoCGD} alt="LogoCGD" />
               </a>
             </div>
             <div className="col-4 col-md-2 d-flex justify-content-center">
-              <a href="https://www.newcb.ktb.co.th" target="_blank">
+              <a href="https://www.newcb.ktb.co.th" target="_blank" rel="noopener noreferrer">
                 <img className="w-100" src={LogoKTB} alt="LogoKTB" />
               </a>
             </div>
             <div className="col-4 col-md-2 d-flex justify-content-center">
-              <a href="https://www.mots.go.th" target="_blank">
+              <a href="https://www.mots.go.th" target="_blank" rel="noopener noreferrer">
                 <img className="w-100" src={LogoMOTS} alt="LogoMOTS" />
               </a>
             </div>
             <div className="col-4 col-md-2 d-flex justify-content-center">
-              <a href="https://thai.tourismthailand.org/" target="_blank">
+              <a href="https://thai.tourismthailand.org/" target="_blank" rel="noopener noreferrer">
                 <img className="w-100" src={LogoTAT} alt="LogoTAT" />
               </a>
             </div>

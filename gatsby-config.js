@@ -4,6 +4,7 @@ module.exports = {
     description: `ผู้สนใจเข้าร่วมมาตรการฯ สามารถลงทะเบียน ตั้งแต่ วันที่ 23 ก.ย. - 15 พ.ย. 62`,
     author: `@titleSupapol`,
   },
+  pathPrefix: "/ywc17-interview",
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
@@ -24,7 +25,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/logo/footer.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-sass`,
