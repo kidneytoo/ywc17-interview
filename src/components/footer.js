@@ -2,7 +2,21 @@ import React from "react"
 
 import LogoFooter from '../images/logo/footer.png'
 
-export default function Footer({navbarItems}) {
+export default function Footer() {
+  const navbarItems = [
+    {
+      "label": "ลงทะเบียนเข้าร่วมมาตรการ",
+      "href": "https://regist.ชิมช้อปใช้.com/Register/"
+    },
+    {
+      "label": "ขั้นตอนการเข้าร่วมทั้งหมด",
+      "href": "https://www2.ชิมช้อปใช้.com/howto-register"
+    },
+    {
+      "label": "รายชื่อร้านค้าที่เข้าร่วมรายการ",
+      "href": "https://www2.ชิมช้อปใช้.com/thung-ngern-shop-province"
+    }
+  ]
   return (
     <footer>
       <div className="footer-info py-4">

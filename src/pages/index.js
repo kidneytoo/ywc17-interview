@@ -22,7 +22,7 @@ export default function IndexPage({data}) {
         title="มาตรการส่งเสริมการท่องเที่ยวในประเทศ “ชิมช้อปใช้”"
         description="ผู้สนใจเข้าร่วมมาตรการฯ สามารถลงทะเบียน ตั้งแต่ วันที่ 23 ก.ย. - 15 พ.ย. 62" />
       <div className="home-page">
-        <div className="banner row no-gutters">
+        <div className="banner-container row no-gutters">
           <div className="col cover cover-eating" />
           <div className="col cover cover-shopping">
             <div className="d-flex h-100 justify-content-center align-items-center">
@@ -31,7 +31,7 @@ export default function IndexPage({data}) {
           </div>
           <div className="col cover cover-traveling" />
         </div>
-        <div className="duration-container py-4 d-flex flex-column align-items-center">
+        <div className="duration-container position-relative py-4 d-flex flex-column align-items-center">
           <div>ตั้งแต่วันที่</div>
           <div className="duration">{duration}</div>
           <div className="register-box rounded mt-3 mx-3 p-2 px-3 px-sm-5">
@@ -41,6 +41,7 @@ export default function IndexPage({data}) {
             <br />
             (จำกัดจำนวนผู้ลงทะเบียนรอบละ 5 แสนคน รวม 1 ล้านคนต่อวัน)
           </div>
+          <hr className="position-absolute" />
         </div>
         <div className="container py-5">
           <div className="row">
@@ -61,7 +62,7 @@ export default function IndexPage({data}) {
               <div className="condition mt-2" dangerouslySetInnerHTML={{__html: condition}} />
             </div>
           </div>
-          <div className="banner-container row mx-0 py-3 px-4 px-md-0">
+          <div className="call-center-container row mx-0 p-4 px-md-0">
             <div className="col-md-4">
               <a href="tel:021111144">
                 <img className="w-100" src={BannerKTB} alt="BannerKTB" />

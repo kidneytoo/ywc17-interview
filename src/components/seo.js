@@ -1,10 +1,3 @@
-/**
- * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
@@ -39,9 +32,13 @@ function SEO({ description, title, pathname, image }) {
 
   return (
     <>
-      <Helmet lang="th" title={seo.title}>
+      <Helmet
+        htmlAttributes={{
+          lang: 'th',
+        }}
+        title={seo.title}>
         <meta name="description" content={seo.description} />
-        {/*<meta name="image" content={seo.image} />*/}
+        <meta name="image" content={seo.image} />
         {seo.url && <meta property="og:url" content={seo.url} />}
           <meta property="og:type" content="website" />
         {seo.title && <meta property="og:title" content={seo.title} />}

@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import Logo from '../images/logo/footer.png'
 
 export default function Header({navbarItems}) {
-  const [isOpen, setOpen] = useState(false)
+  const [isShowMenu, setShowMenu] = useState(false)
   return (
     <header>
       <div className="container">
@@ -15,12 +15,12 @@ export default function Header({navbarItems}) {
             </li>
           ))}
         </ul>
-        <div className="mobile-header py-2 d-flex d-sm-none justify-content-between align-items-center">
-          <Link className="h-100" to="/">
+        <div className="mobile-header py-1 d-flex d-sm-none justify-content-between align-items-center">
+          <a className="h-100" href="/">
             <img className="h-100" src={Logo} alt="logo" />
-          </Link>
-          <button className="hamburger-div" onClick={() => setOpen(!isOpen)}>
-            <div className={isOpen ? 'open' : null} id="hamburger">
+          </a>
+          <button className="hamburger-div" onClick={() => setShowMenu(!isShowMenu)}>
+            <div className={isShowMenu ? 'show' : null} id="hamburger">
               <span />
               <span />
               <span />
@@ -29,7 +29,7 @@ export default function Header({navbarItems}) {
           </button>
         </div>
       </div>
-      <ul className={`mobile-item d-flex flex-column list-unstyled m-0 d-sm-none${isOpen ? ' open' : ''}`}>
+      <ul className={`mobile-item d-flex flex-column list-unstyled m-0 d-sm-none${isShowMenu ? ' show' : ''}`}>
         {navbarItems.map((navbarItem, i) => (
           <li key={i} className="py-2 w-100">
             <a className="d-block text-right px-4" href={navbarItem.href}>{navbarItem.label}</a>

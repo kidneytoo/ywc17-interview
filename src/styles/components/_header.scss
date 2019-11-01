@@ -40,7 +40,7 @@ header {
         transition: .5s ease-in-out;
         cursor: pointer;
 
-        &.open {
+        &.show {
           span {
             &:nth-child(1),
             &:nth-child(4) {
@@ -95,7 +95,7 @@ header {
     width: 100vw;
     max-height: 0;
     transition: max-height 0.3s ease-in-out;
-    &.open {
+    &.show {
       max-height: 200px;
     }
   }
