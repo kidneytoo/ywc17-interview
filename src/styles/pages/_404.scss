@@ -1,0 +1,30 @@
+.not-found-page {
+  padding-top: 60px;
+  min-height: 100vh;
+
+  img {
+    width: 64px;
+  }
+
+  h1 {
+    font-size: 48px;
+    color: $ci-red;
+  }
+
+  h2 {
+    color: $ci-blue;
+  }
+
+  p {
+    color: $ci-yellow;
+  }
+
+  a {
+    background-color: $ci-blue;
+    color: $white;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: $ci-yellow;
+    }
+  }
+}
