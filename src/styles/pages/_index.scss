@@ -57,10 +57,6 @@
       font-family: 'TATSanaChon-Bold';
     }
   }
-  .banner-container {
-    img {
-    }
-  }
   .brand-logo-container {
     a {
       &:hover {
@@ -70,9 +66,9 @@
       }
       img {
         transition: transform 0.3s ease;
-        max-width: 100px;
-        @media (max-width: $screen-xs-max) {
-          max-width: 80px;
+        max-width: 90px;
+        @media (max-width: $screen-sm-max) {
+          max-width: 75px;
         }
       }
     }

@@ -26,7 +26,7 @@ export default function IndexPage({data}) {
           <div className="col cover cover-eating" />
           <div className="col cover cover-shopping">
             <div className="d-flex h-100 justify-content-center align-items-center">
-              <img className="w-100 p-4" src={Banner} alt="banner" />
+              <img className="w-100 p-2 p-md-3" src={Banner} alt="banner" />
             </div>
           </div>
           <div className="col cover cover-traveling" />
@@ -42,7 +42,7 @@ export default function IndexPage({data}) {
             (จำกัดจำนวนผู้ลงทะเบียนรอบละ 5 แสนคน รวม 1 ล้านคนต่อวัน)
           </div>
         </div>
-        <div className="container py-4">
+        <div className="container py-5">
           <div className="row">
             <div className="detail-container col-md-10">
               <h4 className="d-none d-md-block m-0">
@@ -117,11 +117,11 @@ export default function IndexPage({data}) {
 }
 
 export const query = graphql`
-    query {
-        ywcData {
-            condition
-            detail
-            duration
-        }
+  query {
+    ywcData {
+      condition
+      detail
+      duration
     }
+  }
 `;

@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { Link } from "gatsby"
 
 import Logo from '../images/logo/footer.png'
 
@@ -14,16 +15,18 @@ export default function Header({navbarItems}) {
             </li>
           ))}
         </ul>
-        <div className="mobile-header py-2 d-flex d-sm-none justify-content-between">
-          <img className="h-100" src={Logo} alt="logo" />
-          <button onClick={() => setOpen(!isOpen)}>
+        <div className="mobile-header py-2 d-flex d-sm-none justify-content-between align-items-center">
+          <Link className="h-100" to="/">
+            <img className="h-100" src={Logo} alt="logo" />
+          </Link>
+          <a onClick={() => setOpen(!isOpen)}>
             <div className={isOpen ? 'open' : null} id="hamburger">
               <span></span>
               <span></span>
               <span></span>
               <span></span>
             </div>
-          </button>
+          </a>
         </div>
       </div>
       <ul className={`mobile-item d-flex flex-column list-unstyled m-0 d-sm-none${isOpen ? ' open' : ''}`}>

@@ -2,6 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `มาตรการส่งเสริมการท่องเที่ยวในประเทศ “ชิมช้อปใช้”`,
     description: `ผู้สนใจเข้าร่วมมาตรการฯ สามารถลงทะเบียน ตั้งแต่ วันที่ 23 ก.ย. - 15 พ.ย. 62`,
+    image: `/images/og.png`,
+    url: `https://kidneytoo.github.io/ywc17-interview`,
     author: `@titleSupapol`,
   },
   pathPrefix: "/ywc17-interview",

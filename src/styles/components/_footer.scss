@@ -5,6 +5,9 @@ footer {
 
     img {
       width: 108px;
+      @media (max-width: $screen-sm-max) {
+        width: 128px;
+      }
     }
 
     .title {
@@ -16,6 +19,7 @@ footer {
     .info {
       a {
         color: $text-black;
+        white-space: nowrap;
         transition: color 0.3s ease;
 
         &:hover {
