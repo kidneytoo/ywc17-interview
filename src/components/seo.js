@@ -10,7 +10,9 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, title, pathname }) {
+import OGImage from '../images/og.png'
+
+function SEO({ description, title, pathname, image }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -30,7 +32,7 @@ function SEO({ description, title, pathname }) {
   const seo = {
     title: title || site.siteMetadata.title,
     description: description || site.siteMetadata.description,
-    image: site.siteMetadata.image,
+    image: `https://kidneytoo.github.io${image || OGImage}`,
     url: `${site.siteMetadata.url}${pathname || '/'}`
 
   }

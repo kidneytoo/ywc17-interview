@@ -19,14 +19,14 @@ export default function Header({navbarItems}) {
           <Link className="h-100" to="/">
             <img className="h-100" src={Logo} alt="logo" />
           </Link>
-          <a onClick={() => setOpen(!isOpen)}>
+          <button className="hamburger-div" onClick={() => setOpen(!isOpen)}>
             <div className={isOpen ? 'open' : null} id="hamburger">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
+              <span />
+              <span />
+              <span />
+              <span />
             </div>
-          </a>
+          </button>
         </div>
       </div>
       <ul className={`mobile-item d-flex flex-column list-unstyled m-0 d-sm-none${isOpen ? ' open' : ''}`}>
