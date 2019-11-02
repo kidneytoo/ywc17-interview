@@ -16,7 +16,7 @@ export default function Header({navbarItems}) {
           ))}
         </ul>
         <div className="mobile-header py-1 d-flex d-sm-none justify-content-between align-items-center">
-          <a className="h-100" href="/">
+          <a className="h-100" href="https://kidneytoo.github.io/ywc17-interview">
             <img className="h-100" src={Logo} alt="logo" />
           </a>
           <button className="hamburger-div" onClick={() => setShowMenu(!isShowMenu)}>
