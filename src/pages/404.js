@@ -2,6 +2,7 @@ import React from "react"
 
 import SEO from "../components/seo"
 import LogoFooter from '../images/logo/footer.png'
+import '../styles/index.scss'
 
 export default function NotFoundPage() {
 

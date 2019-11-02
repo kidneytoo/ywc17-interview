@@ -49,8 +49,7 @@ export default function IndexPage({data}) {
               <h4 className="d-none d-md-block m-0">
                 มาตรการส่งเสริมการบริโภค
                 <br />
-                ในประเทศ
-                <span className="nowrap">"ชิมช้อปใช้"</span>
+                {'ในประเทศ '}<span className="nowrap">"ชิมช้อปใช้"</span>
               </h4>
               <h4 className="d-md-none m-0">
                 มาตรการส่งเสริมการบริโภคในประเทศ <span className="nowrap">"ชิมช้อปใช้"</span>
