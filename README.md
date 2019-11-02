@@ -20,3 +20,35 @@ See Here: https://kidneytoo.github.io/ywc17-interview/
 1.  **Bootstrap** (https://getbootstrap.com/)
 
     The world's most popular front-end component library for creating responsive website.
+
+## Project Setup
+
+Clone this project
+```shell script
+git clone https://github.com/kidneytoo/ywc17-interview.git
+```
+
+**Download all dependencies**
+```shell script
+npm install
+```
+
+**Develop this project**
+```shell script
+npm start
+```
+
+**Create a Production build**
+```shell script
+npm run build
+```
+
+**View the production site locally**
+```shell script
+npm run serve
+```
+
+**Deploy to Github Pages**
+```shell script
+npm run deploy
+```
