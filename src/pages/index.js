@@ -1,4 +1,5 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
+import axios from 'axios'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -14,8 +15,17 @@ import LogoKTB from '../images/home/brand_logo/KTB.png'
 import LogoMOTS from '../images/home/brand_logo/MOTS.png'
 import LogoTAT from '../images/home/brand_logo/TAT.png'
 
-export default function IndexPage({data}) {
-  const {condition, detail, duration} = data.ywcData
+export default function IndexPage() {
+  const [data, setData] = useState({})
+
+  useEffect(() => {
+    axios.get('https://panjs.com/ywc.json').then(({data}) => {
+      setData(data)
+    })
+  }, [])
+
+  const {detail, duration, condition} = data
+
   return (
     <Layout>
       <SEO
@@ -115,13 +125,3 @@ export default function IndexPage({data}) {
     </Layout>
   )
 }
-
-export const query = graphql`
-  query {
-    ywcData {
-      condition
-      detail
-      duration
-    }
-  }
-`;
