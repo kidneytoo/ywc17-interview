@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import axios from 'axios'
+import sanitizeHtml from 'sanitize-html'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -64,11 +65,11 @@ export default function IndexPage() {
               <h4 className="d-md-none m-0">
                 มาตรการส่งเสริมการบริโภคในประเทศ <span className="nowrap">"ชิมช้อปใช้"</span>
               </h4>
-              <div className="detail mt-4" dangerouslySetInnerHTML={{__html: detail}} />
+              <div className="detail mt-4" dangerouslySetInnerHTML={{__html: sanitizeHtml(detail)}} />
             </div>
             <div className="condition-container col-12 my-4">
               <div className="title">เงื่อนไขการเข้าร่วมมาตรการ</div>
-              <div className="condition mt-2" dangerouslySetInnerHTML={{__html: condition}} />
+              <div className="condition mt-2" dangerouslySetInnerHTML={{__html: sanitizeHtml(condition)}} />
             </div>
           </div>
           <div className="call-center-container row mx-0 p-4 px-md-0">
